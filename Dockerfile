@@ -20,7 +20,7 @@ FROM node:14-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV production
-ENV NODE_OPTIONS=”–max_old_space_size=2048″
+ENV NODE_OPTIONS=”–max_old_space_size=8000″
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001

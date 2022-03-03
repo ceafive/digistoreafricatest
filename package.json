@@ -5,7 +5,7 @@
   "cacheDirectories": [],
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "ANALYZE=true NODE_OPTIONS=\"--max_old_space_size=8000\" next build",
     "start": "next start -p $PORT",
     "export": "next build && next export",
     "serve": "npm run build && firebase emulators:start --only functions,hosting",
