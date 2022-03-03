@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const CustomerWrapper = styled.div`
   max-width: 810px;
@@ -13,8 +13,9 @@ const CustomerWrapper = styled.div`
   }
 
   p {
-    margin: 0 12px 0 0;
-    color: ${themeGet('colors.menu', '#0D233E')};
+    margin: 10px 20px 0 0;
+    /* height: 50px; */
+    color: ${themeGet("colors.menu", "#0D233E")};
     @media only screen and (max-width: 991px) {
       display: none;
     }
@@ -31,11 +32,14 @@ export const ImageWrapper = styled.div`
     gap: 15px;
   }
   @media only screen and (max-width: 767px) {
+    padding: 0 30px;
     grid-template-columns: repeat(2, auto);
   }
   img {
     margin: 0 12px;
+    height: 60px;
     @media only screen and (max-width: 667px) {
+      height: 100%;
       margin: 5px 10px;
     }
   }

@@ -20,7 +20,7 @@
 /* ------------------------------------ */
 // Navbar data section
 /* ------------------------------------ */
-import logo from "common/assets/image/appClassic/logo.jpeg";
+import logo from "common/assets/image/appClassic/logo.png";
 
 export const navbar = {
   logo: logo,
@@ -33,9 +33,9 @@ export const navbar = {
     // },
     // {
     //   id: 2,
-    //   label: 'Key Features',
-    //   path: '#keyFeatures',
-    //   offset: '84',
+    //   label: "Coming Soon",
+    //   path: "#keyFeatures",
+    //   offset: "84",
     // },
     // {
     //   id: 3,
@@ -61,10 +61,10 @@ export const navbar = {
 /* ------------------------------------ */
 // client data section
 /* ------------------------------------ */
-import client1 from "common/assets/image/appClassic/client1.svg";
-import client2 from "common/assets/image/appClassic/client2.svg";
-import client3 from "common/assets/image/appClassic/client3.svg";
-import client4 from "common/assets/image/appClassic/client4.svg";
+import client1 from "common/assets/image/appClassic/starbites.png";
+import client2 from "common/assets/image/appClassic/vodafone.jpeg";
+import client3 from "common/assets/image/appClassic/papaspizza.png";
+import client4 from "common/assets/image/appClassic/surfline.png";
 
 export const client = [
   {
@@ -98,7 +98,7 @@ import keyFeature3 from "common/assets/image/appClassic/keyFeature-3.svg";
 
 export const keyFeatures = {
   slogan: "WHATS THE FUNCTION",
-  title: "Meet the feature of app",
+  title: "WEBSITE UNDER CONSTRUCTION",
   features: [
     {
       id: 1,

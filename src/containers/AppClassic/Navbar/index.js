@@ -91,6 +91,10 @@ const Navbar = () => {
           <ScrollSpyMenu className="menu" menuItems={navMenu} offset={-84} />
           {/* end of main menu */}
 
+          <a href="https://signup.digistoreafrica.com/" target={"_blank"}>
+            <Button className="trail" title="Sign Up" />
+          </a>
+
           <Button
             className="menubar"
             icon={
@@ -130,6 +134,9 @@ const Navbar = () => {
               </li>
             ))}
           </Scrollspy>
+          <a href="https://signup.digistoreafrica.com/" target={"_blank"}>
+            <Button title="Sign Up" />
+          </a>
         </Container>
       </MobileMenu>
       {/* end of mobile menu */}

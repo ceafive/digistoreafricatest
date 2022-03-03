@@ -16,7 +16,8 @@ import BannerWrapper, {
 } from "./banner.style";
 
 import microsoft from "common/assets/image/appClassic/microsoft.svg";
-import bannerImg from "common/assets/image/appClassic/bannerImg.png";
+// import bannerImg from "common/assets/image/appClassic/bannerImg.jpeg";
+import bannerImg from "common/assets/image/appClassic/bannerImg2.png";
 
 const Banner = () => {
   return (
@@ -26,26 +27,35 @@ const Banner = () => {
           <Fade up delay={100}>
             <Heading
               as="h1"
-              content="The Revolution of
-          Ultimate Platform to 
-          monitor your task"
+              content="Empower Your Business with the tools to go Digital"
             />
           </Fade>
           <Fade up delay={200}>
-            <Text
-              content="Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod tempor incididunt labore dolore magna
-          ipsum dolor sit amet consectetur."
-            />
+            <Text content="All the tools you need to manage your business operations, reach more customers, and access financial services to expand your business." />
+          </Fade>
+          <Fade up delay={300}>
+            <ButtonGroup>
+              <a href="https://signup.digistoreafrica.com/" target={"_blank"}>
+                <Button className="primary" title="Sign Up" />
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=qOCFQPgpUe4"
+                target={"_blank"}
+              >
+                <Button
+                  className="text"
+                  variant="textButton"
+                  icon={<Icon icon={playCircle} />}
+                  iconPosition="left"
+                  title="Watch Video"
+                />
+              </a>
+            </ButtonGroup>
           </Fade>
         </BannerContent>
         <BannerImage>
           <Fade up delay={100}>
-            <NextImage
-              src={bannerImg}
-              alt="Banner"
-              width="650%"
-              height="650%"
-            />
+            <NextImage src={bannerImg} alt="Banner" />
           </Fade>
         </BannerImage>
       </Container>

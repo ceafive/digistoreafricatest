@@ -5,17 +5,9 @@ import ResetCSS from "common/assets/css/style";
 import Sticky from "react-stickynode";
 import Navbar from "containers/AppClassic/Navbar";
 import Banner from "containers/AppClassic/Banner";
-import Customer from "containers/AppClassic/Customer";
 import KeyFeatures from "containers/AppClassic/KeyFeatures";
-import AppSlider from "containers/AppClassic/AppSlider";
-import Features from "containers/AppClassic/Features";
-import DesignedAndBuilt from "containers/AppClassic/DesignedAndBuilt";
-import FeatureTab from "containers/AppClassic/FeatureTab";
-import PricingPolicy from "containers/AppClassic/PricingPolicy";
-import Testimonial from "containers/AppClassic/Testimonial";
-import Faq from "containers/AppClassic/Faq";
-import JoinTrial from "containers/AppClassic/JoinTrial";
-import Footer from "containers/AppClassic/Footer";
+import Customer from "containers/AppClassic/Customer";
+
 import GlobalStyle, {
   AppWrapper,
   ContentWrapper,
@@ -26,7 +18,7 @@ const AppClassic = () => {
     <ThemeProvider theme={theme}>
       <>
         <Head>
-          <title>App classic | A next js landing page</title>
+          <title>Digistore Africa</title>
           <meta name="Description" content="React next landing page" />
           <meta name="theme-color" content="#2563FF" />
           <meta
@@ -47,6 +39,8 @@ const AppClassic = () => {
           </Sticky>
           <ContentWrapper>
             <Banner />
+            <Customer />
+            <KeyFeatures />
           </ContentWrapper>
         </AppWrapper>
         {/* end of app classic landing */}

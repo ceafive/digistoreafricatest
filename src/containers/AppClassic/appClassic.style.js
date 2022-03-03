@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled, { createGlobalStyle } from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -47,7 +47,7 @@ export const AppWrapper = styled.div`
   .sticky-active {
     .navbar {
       padding: 20px 0 21px;
-      background-color: ${themeGet('colors.white', '#ffffff')};
+      background-color: ${themeGet("colors.white", "#ffffff")};
       @media only screen and (max-width: 1366px) {
         padding: 15px 0 16px;
       }
@@ -78,7 +78,7 @@ export const SectionHeader = styled.header`
     line-height: 24px;
     margin-bottom: 12px;
     letter-spacing: 1.5px;
-    color: ${themeGet('colors.primary', '#2563FF')};
+    color: ${themeGet("colors.primary", "#2563FF")};
     text-transform: uppercase;
     @media only screen and (max-width: 991px) {
       font-size: 13px;
@@ -89,7 +89,7 @@ export const SectionHeader = styled.header`
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    color: ${themeGet('colors.headingColor', '#0F2137')};
+    color: ${themeGet("colors.headingColor", "#0F2137")};
     margin: 0;
     letter-spacing: -1px;
     @media only screen and (max-width: 1366px) {

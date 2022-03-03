@@ -1,18 +1,18 @@
-import React, { Fragment } from 'react';
-import Fade from 'react-reveal/Fade';
-import { Icon } from 'react-icons-kit';
-import { mediaRecordOutline } from 'react-icons-kit/typicons/mediaRecordOutline';
-import { plus } from 'react-icons-kit/typicons/plus';
-import { starOutline } from 'react-icons-kit/typicons/starOutline';
-import Text from 'common/components/Text';
-import Heading from 'common/components/Heading';
-import NextImage from 'common/components/NextImage';
-import Container from 'common/components/UI/Container';
-import FeatureBlock from 'common/components/FeatureBlock';
-import { SectionHeader } from '../appClassic.style';
-import SectionWrapper, { FeatureWrapper } from './keyFeatures.style';
+import React, { Fragment } from "react";
+import Fade from "react-reveal/Fade";
+import { Icon } from "react-icons-kit";
+import { mediaRecordOutline } from "react-icons-kit/typicons/mediaRecordOutline";
+import { plus } from "react-icons-kit/typicons/plus";
+import { starOutline } from "react-icons-kit/typicons/starOutline";
+import Text from "common/components/Text";
+import Heading from "common/components/Heading";
+import NextImage from "common/components/NextImage";
+import Container from "common/components/UI/Container";
+import FeatureBlock from "common/components/FeatureBlock";
+import { SectionHeader } from "../appClassic.style";
+import SectionWrapper, { FeatureWrapper } from "./keyFeatures.style";
 
-import { keyFeatures } from 'common/data/AppClassic';
+import { keyFeatures } from "common/data/AppClassic";
 
 const KeyFeatures = () => {
   const { slogan, title, features } = keyFeatures;
@@ -20,31 +20,31 @@ const KeyFeatures = () => {
   return (
     <SectionWrapper id="keyFeatures">
       <Container>
-        <SectionHeader>
+        <div
+          style={{
+            width: "100%",
+            flexDirection: "column",
+            alignItems: "center",
+            textAlign: "center",
+          }}
+        >
           <Fade up>
-            <Heading as="h5" content={slogan} />
-            <Heading content={title} />
-          </Fade>
-        </SectionHeader>
-        <FeatureWrapper>
-          {features.map((item) => (
-            <Fade up delay={100 * item.id} key={`key-feature--key${item.id}`}>
-              <FeatureBlock
-                style={{ '--color': `${item.color}` }}
-                icon={
-                  <Fragment>
-                    <Icon className="plus" icon={plus} />
-                    <Icon className="circle" icon={mediaRecordOutline} />
-                    <NextImage src={item.icon} alt={item.title} />
-                    <Icon className="star" icon={starOutline} />
-                  </Fragment>
-                }
-                title={<Heading as="h3" content={item.title} />}
-                description={<Text content={item.description} />}
+            <>
+              <Heading content={title} />
+              <img
+                src="//images01.nicepage.com/c461c07a441a5d220e8feb1a/ce3b776fd515502ca81efe76/60028-Converted.png"
+                alt=""
+                style={{
+                  justifyContent: "center",
+                  alignItems: "center",
+                  width: 300,
+                }}
+                data-image-width="411"
+                data-image-height="393"
               />
-            </Fade>
-          ))}
-        </FeatureWrapper>
+            </>
+          </Fade>
+        </div>
       </Container>
     </SectionWrapper>
   );

@@ -1,16 +1,18 @@
-import styled from 'styled-components';
-import { themeGet } from '@styled-system/theme-get';
+import styled from "styled-components";
+import { themeGet } from "@styled-system/theme-get";
 
 const BannerWrapper = styled.div`
-  padding-top: 100px;
-  min-height: 802px;
+  padding-top: 0px;
+  min-height: 602px;
+  max-height: 602px;
   overflow: hidden;
-  background-color: ${themeGet('colors.light', '#FAFBFF')};
+  background-color: ${themeGet("colors.light", "#FAFBFF")};
   @media only screen and (min-width: 1201px) and (max-width: 1440px) {
     min-height: 100vh;
   }
   @media only screen and (max-width: 480px) {
     padding-top: 120px;
+    min-height: 852px;
   }
   > div.container {
     display: flex;
@@ -38,7 +40,7 @@ export const BannerContent = styled.div`
     font-size: 46px;
     line-height: 55px;
     font-weight: 700;
-    color: ${themeGet('colors.menu', '#0D233E')};
+    color: ${themeGet("colors.menu", "#0D233E")};
     margin-bottom: 24px;
     @media only screen and (max-width: 1366px) {
       font-size: 32px;
@@ -58,12 +60,12 @@ export const RatingInfo = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 22px;
-  color: ${themeGet('colors.menu', '#0D233E')};
+  color: ${themeGet("colors.menu", "#0D233E")};
 
   .rating {
     margin-right: 10px;
     .star {
-      color: ${themeGet('colors.yellow', '#FFA740')};
+      color: ${themeGet("colors.yellow", "#FFA740")};
     }
     .star-o {
       color: #e8e8e8;
@@ -79,9 +81,12 @@ export const BannerImage = styled.div`
   flex-shrink: 0;
   align-self: flex-end;
   @media only screen and (max-width: 480px) {
-    margin-top: 40px;
+    margin-top: -40px;
     img {
-      max-width: 70%;
+      margin-left: -100px !important;
+      /* max-width: 50% !important; */
+      max-height: 50% !important;
+      max-width: 150;
     }
   }
 `;
@@ -97,7 +102,7 @@ export const ButtonGroup = styled.div`
 
     &.primary {
       &:hover {
-        background-color: ${themeGet('colors.primaryHover', '#3C74FF')};
+        background-color: ${themeGet("colors.primaryHover", "#3C74FF")};
       }
     }
 
@@ -109,7 +114,7 @@ export const ButtonGroup = styled.div`
         }
       }
       &:hover {
-        color: ${themeGet('colors.primaryHover', '#3C74FF')};
+        color: ${themeGet("colors.primaryHover", "#3C74FF")};
       }
     }
   }
